@@ -1,0 +1,45 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Create a Listing</h2>
+    <div id="main">
+        <form action="">
+            <div class="form-group">
+                <label for="listing_title">Name of Listing</label>
+                <input type="email" class="form-control" id="listing_title" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Enter a title for your listing.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="listing_description">About</label>
+                <textarea class="form-control" id="listing_description" rows="3" placeholder="Enter a description of your listing..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="listing_bid">Starting Bid</label>
+                <input type="email" class="form-control" id="listing_bid" placeholder="Start Bid at...">
+            </div>
+
+            <div class="form-group">
+                <label for="listing_category">Select Categroy</label>
+                <select class="form-control" id="listing_category">
+                  <option>Toys</option>
+                  <option>Home</option>
+                  <option>Fashion</option>
+                  <option>Electronics</option>
+                  <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="listing_url">Add photo(s)</label>
+                <input type="email" class="form-control" id="listing_url" aria-describedby="emailHelp" placeholder="Add url(s) here...">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+
+
+        </form>
+    </div>
+{% endblock %}
